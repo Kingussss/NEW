@@ -1,0 +1,49 @@
+/* Alapbeállítások */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Fejléc */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+}
+
+/* Tartalom */
+main {
+    flex: 1; /* Ez tolja le a lábjegyzetet az aljára */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Lábjegyzet */
+footer {
+    background-color: #ecf0f1;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+}
