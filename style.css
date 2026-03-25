@@ -71,12 +71,33 @@ header {
   line-height: 1.6;
 }
 
-/* MARQUEE */
 .marquee {
   overflow: hidden;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  margin: 40px 0;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 12s linear infinite;
+}
+
+.marquee-track span {
+  white-space: nowrap;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  padding: 15px 0;
+  margin-right: 50px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .marquee-track {
